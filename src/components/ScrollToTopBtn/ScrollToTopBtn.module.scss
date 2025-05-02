@@ -1,0 +1,40 @@
+// ScrollToTopBtn.module.scss
+.root {
+  position: fixed;
+  bottom: -60px; // Начальное положение за экраном
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #24243d;
+  border: 1px solid #7b61ff;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 15px rgba(123, 97, 255, 0.1);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &:hover {
+    background: #2d2d4a;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 20px rgba(123, 97, 255, 0.2);
+
+    .svg {
+      fill: #8d75ff;
+    }
+  }
+
+  &.visible {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+
+.svg {
+  width: 24px;
+  height: 24px;
+  transition: fill 0.2s ease;
+}

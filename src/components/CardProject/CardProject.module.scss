@@ -1,0 +1,122 @@
+@import '../../scss/app.scss';
+
+.root {
+  display: inline-block;
+  width: 550px;
+  border-radius: 10px;
+  background: var(--bg-second-clr);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    max-width: 370px;
+  }
+}
+
+.react {
+  min-height: 700px;
+}
+
+.layout {
+  min-height: 500px;
+}
+
+.img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.text {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.stackText {
+  border-top: 3px solid var(--btn-color);
+  padding-top: 20px;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.stackUl {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-top: 10px;
+  max-height: 140px;
+  overflow-y: auto; // Добавляем прокрутку при переполнении
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  li {
+    color: var(--text-color);
+    &::marker {
+      color: var(--btn-color);
+    }
+  }
+}
+
+.buttons {
+  margin-top: auto;
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.button {
+  display: flex;
+  background: var(--btn-color);
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: var(--btn-hover);
+  }
+
+  @media (max-width: 768px) {
+    max-width: 47%;
+  }
+}
+
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonIconItem {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.buttonIconWatch {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
