@@ -232,7 +232,7 @@ a {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
-    align-items: stretch;
+    align-items: start;
 
     @media (min-width: 768px) {
       grid-template-columns: repeat(4, 1fr);
@@ -244,42 +244,30 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: all 0.3s ease;
-    padding: 20px 15px;
-    height: 100%;
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 8px;
-    box-shadow: var(--shadow-sm);
+    padding: 0;
+    background: none !important;
+    transition: transform 0.3s ease;
 
     &:hover {
-      transform: none;
-      box-shadow: var(--shadow-md);
-
-      & > * {
-        transform: translateY(-3px);
-      }
-    }
-
-    & > * {
-      transition: transform 0.3s ease;
-      will-change: transform;
+      transform: translateY(-5px);
     }
   }
 
   &__list-svg {
     width: 40px;
     height: 40px;
-    margin-bottom: 12px;
-    flex-shrink: 0;
+    margin-bottom: 8px;
 
     @media (min-width: 768px) {
       width: 56px;
       height: 56px;
     }
   }
-}
 
+  &__list-el > div {
+    transition: inherit;
+  }
+}
 .projectsBtns {
   display: flex;
   flex-wrap: wrap;
