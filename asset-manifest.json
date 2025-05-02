@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.dab0bef6.css",
+    "main.js": "/portfolio/static/js/main.e38ea611.js",
+    "static/media/animego.png": "/portfolio/static/media/animego.64f34bc8e0ae5d0aa131.png",
+    "static/media/coffie.png": "/portfolio/static/media/coffie.ed649e85919e7a08775c.png",
+    "static/media/pizza.png": "/portfolio/static/media/pizza.6a8d6b51648d3ff711ef.png",
+    "static/media/sushi.png": "/portfolio/static/media/sushi.12f1bd22cf90c8ea0c4b.png",
+    "static/media/vk.png": "/portfolio/static/media/vk.4da8b06869d9a4e8d8b7.png",
+    "static/media/app-icon.ico": "/portfolio/static/media/app-icon.8097165060da09aec6dc.ico",
+    "static/media/calc.png": "/portfolio/static/media/calc.2ebacb99b0beb4bc27a0.png",
+    "static/media/nstu.png": "/portfolio/static/media/nstu.ad661a75554f6a68137b.png",
+    "static/media/todo.png": "/portfolio/static/media/todo.5221df30accc94bc5180.png",
+    "static/media/currency.png": "/portfolio/static/media/currency.8cc6a4a09636e0533164.png",
+    "static/media/convertLang.png": "/portfolio/static/media/convertLang.7204977b05c14bee387a.png",
+    "index.html": "/portfolio/index.html",
+    "main.dab0bef6.css.map": "/portfolio/static/css/main.dab0bef6.css.map",
+    "main.e38ea611.js.map": "/portfolio/static/js/main.e38ea611.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dab0bef6.css",
+    "static/js/main.e38ea611.js"
+  ]
+}
